@@ -134,6 +134,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      // Redirects
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/docs/smorg",
+            to: "/docs/intro",
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;
