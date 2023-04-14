@@ -1,0 +1,28 @@
+name: "build-docusaurus"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.13.0
+          cache: npm
+      - name: install
+        run: npm ci
+      - name: Build
+        run: npm run build
+        
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v1.0.8
+        with:
+          # Path of the directory containing the static assets.
+          path: build/
