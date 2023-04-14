@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkredirect_test=self.webpackChunkredirect_test||[]).push([[9882],{7338:e=>{e.exports=JSON.parse('{"permalink":"/docusaurus-redirect-test/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

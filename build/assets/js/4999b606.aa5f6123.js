@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkredirect_test=self.webpackChunkredirect_test||[]).push([[746],{7739:e=>{e.exports=JSON.parse('{"permalink":"/docusaurus-redirect-test/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
