@@ -143,7 +143,7 @@ const config = {
         redirects: [
           {
             from: "/docs/smorg",
-            to: "/docs/intro",
+            to: "/docs/redirectTarget",
           },
         ],
       },
