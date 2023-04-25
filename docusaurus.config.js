@@ -142,8 +142,8 @@ const config = {
       {
         redirects: [
           {
-            from: "/docs/smorg/",
-            to: "/docs/intro/",
+            from: "/docs/smorg",
+            to: "/docs/intro",
           },
         ],
       },
